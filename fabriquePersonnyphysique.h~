@@ -1,0 +1,11 @@
+#ifndef FABRIQUEPERSONNEPHYSIQUE_H
+#define FABRIQUEPERSONNEPHYSIQUE_H
+#include "fabriqueproprietaire.h"
+#include "personnephysique.h"
+class fabriquePersonnephysique:public fabriqueProprietaire{
+public:
+	void creerProprietaire(std::string nom, std::string adresse, std::string datedenaissance);
+	~fabriquePersonnephysique();
+};
+
+#endif

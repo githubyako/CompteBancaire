@@ -1,0 +1,27 @@
+#include "conteneur.h"
+
+void Conteneur::addCompte( Comptebancaire& _compte) 
+{
+	m_comptes.push_back(_compte);
+}
+
+void Conteneur::addProprio( Proprietaire& _proprio) 
+{
+	m_proprios.push_back(_proprio);
+}
+
+void Conteneur::removeCompte(Comptebancaire& _compte)
+{
+std::vector<Comptebancaire>::iterator it = m_comptes.begin();
+	for(it;it!=m_comptes.end();++it){
+		if(it==_compte){
+			m_comptes.swap(*it,m_comptes.end());
+			m_comptes.pop_back();
+		}
+	}
+}
+
+void Conteneur::removeProprio(Proprietaire& _proprio)
+{
+
+}

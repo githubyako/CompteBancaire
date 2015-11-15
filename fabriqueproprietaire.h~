@@ -1,0 +1,12 @@
+#ifndef FABRIQUEPROPRIETAIRE_H
+#define FABRIQUEPROPRIETAIRE_H
+#include <string>
+class fabriqueProprietaire
+{
+private:
+	
+public:
+	virtual ~fabriqueProprietaire();
+};
+
+#endif

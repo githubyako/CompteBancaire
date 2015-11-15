@@ -1,0 +1,21 @@
+#include "proprietaire.h"
+#include "personnephysique.h"
+#include "couple.h"
+#include "societe.h"
+std::ostream& operator<<(std::ostream& _os, const Proprietaire& _proprio)
+{
+return _proprio.out(_os); 
+}
+
+std::string Proprietaire::get_type()
+{
+	if(dynamic_cast<Personnephysique*>(this)!=nullptr){
+		return "Personnephysique";
+	}else if(dynamic_cast<Couple*>(this)!=nullptr){
+		return "Couple";
+	}else if(dynamic_cast<Societe*>(this)!=nullptr){
+		return "Societe";
+	}else{
+		return "Type inconnu";
+	}
+}

@@ -1,0 +1,11 @@
+#include "fabriquesociete.h"
+
+fabriqueSociete::~fabriqueSociete()
+{
+
+}
+
+Proprietaire* fabriqueSociete::creerProprietaire(std::string nom, std::string adresse, const Personnephysique& gerant)
+{
+
+}

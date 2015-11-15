@@ -1,0 +1,12 @@
+#ifndef FABRIQUECOUPLE_H
+#define FABRIQUECOUPLE_H
+#include "fabriqueproprietaire.h"
+#include "personnephysique.h"
+
+class fabriqueCouple:public fabriqueProprietaire
+{
+public:
+	Proprietaire* creerProprietaire(Personnephysique const & p1, Personnephysique const & p2);
+	~fabriqueCouple();
+};
+#endif

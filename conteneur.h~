@@ -1,0 +1,20 @@
+#ifndef CONTENEUR_H
+#define CONTENEUR_H
+#include "personnephysique.h"
+#include "couple.h"
+#include "societe.h"
+#include "comptebancaire.h"
+#include <vector>
+
+
+class Conteneur{
+private:
+	std::vector<Proprietaire> m_proprios;
+	std::vector<Comptebancaire> m_comptes;
+public:
+	void addProprio(Proprietaire const & _proprio) const;
+	void addCompte(Comptebancaire const & _compte) const;
+	void removeProprio(Proprietaire & _proprio);
+	void removeCompte(Comptebancaire & _compte);
+};
+#endif
