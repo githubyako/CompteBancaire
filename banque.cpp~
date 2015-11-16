@@ -20,7 +20,7 @@ Proprietaire* Banque::creerProprietaire(std::string _nom, std::string _adresse, 
 {
 	Personnephysique * pp = dynamic_cast<Personnephysique*>(_gerant);
 	if(pp!=nullptr){
-		Societe* soc = new Societe(_nom,_adresse,pp);
+		Societe* soc = new Societe(_nom,_adresse,_gerant);
 		m_proprios.push_back(soc);
 		return soc;
 	}else{

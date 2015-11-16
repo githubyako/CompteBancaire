@@ -9,17 +9,11 @@ Comptebancaire::Comptebancaire(Proprietaire* _proprio):m_id(s_idc++),m_proprio(_
 
 }
 
-Comptebancaire::Comptebancaire(const Comptebancaire& cptb)
-{
-
-}
 
 Comptebancaire::~Comptebancaire()
 {
 	
 }
-
-
 float Comptebancaire::getsolde() const
 {
 	return m_solde;

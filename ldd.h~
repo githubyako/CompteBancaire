@@ -8,7 +8,7 @@ private:
 	friend Banque;
 	static float s_interestRate;
 	Ldd(Proprietaire* _proprio);
-	Ldd(Ldd const & _ldd);
+	Ldd(Ldd const & ldd);
 public:
 	static void changeInterestRate(float _newRate);
 	void appliquerInterets();

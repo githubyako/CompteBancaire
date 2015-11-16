@@ -16,7 +16,7 @@ float Comptecourant::getDecAut() const
 	return m_decouvertautorise;
 }
 
-Comptecourant::Comptecourant(Proprietaire* _proprio): Comptebancaire(_proprio),m_decouvertautorise(0)
+Comptecourant::Comptecourant(const Proprietaire* _proprio): Comptebancaire(_proprio),m_decouvertautorise(0)
 {
 
 }

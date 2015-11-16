@@ -8,7 +8,7 @@ private:
 	friend Banque;
 	float m_decouvertautorise;
 	Comptecourant(Comptecourant const & _compte);
-	Comptecourant(Proprietaire * _proprio);
+	Comptecourant(Proprietaire const * _proprio);
 public:
 	void modifierDecAut(float _newDecAut);
 	float getDecAut() const;

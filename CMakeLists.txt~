@@ -2,7 +2,7 @@ project(comptebancaire)
 
 cmake_minimum_required(VERSION 2.8)
 
-add_executable(comptebancaire fabriquesociete.cpp fabriquepersonnephysique.cpp societe.cpp personnephysique.cpp couple.cpp fabriqueproprietaire.cpp proprietaire.cpp main.cpp)
+add_executable(comptebancaire ldd.cpp banque.cpp comptecourant.cpp comptebancaire.cpp societe.cpp personnephysique.cpp couple.cpp proprietaire.cpp main.cpp)
 
 install(TARGETS comptebancaire RUNTIME DESTINATION bin)
 

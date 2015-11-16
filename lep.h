@@ -1,14 +1,14 @@
-#ifndef LDD_H
-#define LDD_H
+#ifndef LEP_H
+#define LEP_H
 #include "comptebancaire.h"
 
 class Banque;
-class Ldd:public Comptebancaire{
+class Lep:public Comptebancaire{
 private:
 	friend Banque;
 	static float s_interestRate;
-	Ldd(Proprietaire* _proprio);
-	Ldd(Ldd const & _ldd);
+	Lep(Proprietaire* _proprio);
+	Lep(Lep const & _lep);
 public:
 	static void changeInterestRate(float _newRate);
 	void appliquerInterets();
