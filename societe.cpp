@@ -5,7 +5,7 @@ Societe::Societe(const Societe& _soc):m_nom(_soc.m_nom),m_adresse(_soc.m_adresse
 
 }
 
-Societe::Societe(std::string _nom, std::string _adresse, const Personnephysique& _gerant)
+Societe::Societe(std::string _nom, std::string _adresse, Personnephysique* _gerant)
 :m_nom(_nom),m_adresse(_adresse),m_gerant(_gerant)
 {
 	

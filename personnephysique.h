@@ -1,7 +1,8 @@
 #ifndef PERSONNEPHYSIQUE_H
 #define PERSONNEPHYSIQUE_H
 #include "proprietaire.h"
-#include "fabriquepersonnephysique.h"
+
+class Banque;
 
 class Personnephysique:public Proprietaire
 {
@@ -9,9 +10,8 @@ private:
 	std::string m_nom;
 	std::string m_adresse;
 	std::string m_datedenaissance;
-	friend fabriquePersonnephysique;
+	friend Banque;
 	Personnephysique(std::string _nom, std::string _adresse, std::string _datedenaissance);
-	Personnephysique();
 	Personnephysique(Personnephysique const & pers);
 public:
 	std::string const & get_adresse() const;

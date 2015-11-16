@@ -6,11 +6,6 @@ Personnephysique::Personnephysique(std::string _nom, std::string _adresse, std::
 
 }
 
-Personnephysique::Personnephysique()
-{
-
-}
-
 Personnephysique::Personnephysique(const Personnephysique& pers)
 {
 
